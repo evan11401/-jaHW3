@@ -73,8 +73,7 @@ public class PokeMoster extends JFrame {
                         SaveBtn.setEnabled(true);//將儲存按鈕啟用 預設為關閉
                     } catch (Exception ex) {
                         System.out.println(ex.toString());
-                    }
-                    System.out.println(save.getSelectedFile().getAbsolutePath());
+                    }                    
                     setFilePathText(save.getSelectedFile().getAbsolutePath());
                     if (!"".equals(NowStatus.getNickname())) {//有小名則顯示 沒有則印出初始字樣
                         ButtonList.textField.setText(NowStatus.getNickname());
